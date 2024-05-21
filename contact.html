@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.cdnfonts.com/css/earth-orbiter" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/chalet-newyork" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/fatal-fighter" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tilt-warp" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/marine-corps" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cartoon-queen" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lexend" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nabla" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Logo_main.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <div class="brand-title">
+                <img src="Logo_main.png" alt="Brand Logo" width="150px" style="margin-left: 10px;">
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="recommend.html">Recommendation</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html"><img class="unknown" src="unknown.png" alt="Unknown"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+
+    <main class="contact-main">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="submit_form.php" method="POST">
+                    
+                    <label for="firstName">Name</label>
+                    <input name="firstName" id="firstName" type="text" autocomplete="given-name" />
+
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="email" autocomplete="off" />
+
+                    <label for="email">Message</label>
+                    <input name="email" id="message" type="text" autocomplete="off" />
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h2>Our Contact Details</h2>
+                <p>EDUSN International School, Inya Lake</p>
+                <p>Email: JamesJonathan9080@gmail.com</p>
+                <p>Phone: 09 430 41 555</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>EDUSN International School</p>
+                <p>Address: 635J Yoma Avenue Street</p>
+                <p>Email: JamesJonathan9080@gmail.com</p>
+                <p>Phone: +95 9 793 333550</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/edusndigitaleducation"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://discord.gg/9jcwZYhy"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxery Technology. All rights reserved. | <a href="https://www.canva.com/design/DAGF0kDLy4E/f4wLQ72rWtMc3LrUZW-h7w/edit?utm_content=DAGF0kDLy4E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Citation</a></p>
+        </div>
+    </footer>
+</body>
+</html>

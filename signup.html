@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.cdnfonts.com/css/earth-orbiter" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/chalet-newyork');</style>
+    <link href="https://fonts.cdnfonts.com/css/fatal-fighter" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tilt-warp" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/marine-corps" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cartoon-queen" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lexend" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nabla" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Logo_main.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <div class="brand-title">
+                <img src="Logo_main.png" alt="Brand Logo" width="150px" style="margin-left: 10px;">
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="recommend.html">Recommendation</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html"><img class="unknown" src="unknown.png" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+
+    <div class="parent_container">
+        <section class="container">
+            <header>Registration Form</header>
+            <form action="#" class="form">
+                <div class="input-box">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Enter full name" required autocomplete="name">
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter email address" required autocomplete="email">
+                </div>
+
+                <div class="column">
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number" required autocomplete="tel">
+                    </div>
+                    <div class="input-box">
+                        <label for="birth-date">Birth Date</label>
+                        <input type="date" id="birth-date" placeholder="Enter birth date" required autocomplete="bday">
+                    </div>
+                </div>
+
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="gender" checked />
+                            <label for="check-male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="gender" />
+                            <label for="check-female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-other" name="gender" />
+                            <label for="check-other">Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-box address">
+                    <label for="address1">Address</label>
+                    <input type="text" id="address1" placeholder="Enter street address" required autocomplete="street-address">
+                    <input type="text" id="address2" placeholder="Enter street address line 2" autocomplete="address-line2">
+                    <div class="column">
+                        <div class="select-box">
+                            <select id="country" required autocomplete="country">
+                                <option hidden>Country</option>
+                                <option>America</option>
+                                <option>Japan</option>
+                                <option>Myanmar</option>
+                                <option>Thailand</option>
+                            </select>
+                        </div>
+                        <input type="text" id="city" placeholder="Enter your city" required autocomplete="address-level2">
+                    </div>
+                    <div class="column">
+                        <input type="text" id="region" placeholder="Enter your region" required autocomplete="address-level1">
+                        <input type="number" id="postal-code" placeholder="Enter postal code" required autocomplete="postal-code">
+                    </div>
+                </div>
+
+                <div class="signin-link">
+                    <span>Already have an account? <a href="signin.html">Sign in</a></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>EDUSN International School</p>
+                <p>Address: 635J Yoma Avenue Street</p>
+                <p>Email: JamesJonathan9080@gmail.com</p>
+                <p>Phone: +95 9 793 333550</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/edusndigitaleducation"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://discord.gg/9jcwZYhy"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxery Technology. All rights reserved. | <a href="https://www.canva.com/design/DAGF0kDLy4E/f4wLQ72rWtMc3LrUZW-h7w/edit?utm_content=DAGF0kDLy4E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Citation</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
